@@ -15,8 +15,8 @@
           # FOD_CLIENT_SECRET: ${{secrets.FOD_CLIENT_SECRET}}
           # FOD_LOGIN_EXTRA_OPTS: --socket-timeout=60s
           # FOD_RELEASE: MyApp:MyRelease
-          # DO_SETUP: true
-          # SETUP_ACTION: https://scm.my.org/shared-repos/fcli-actions/setup.yaml
+          DO_SETUP: true
+            SETUP_ACTION: https://scm.my.org/shared-repos/fcli-actions/setup.yaml
           # SETUP_EXTRA_OPTS: --copy-from "${{ github.repository }}:${{ github.event.repository.default_branch }}"
           # SC_CLIENT_VERSION: 24.4.1
           # DO_PACKAGE_DEBUG: true
