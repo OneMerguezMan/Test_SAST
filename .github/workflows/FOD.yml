@@ -22,10 +22,10 @@ jobs:
           sast-scan: true
           debricked-sca-scan: true
         env:
-          FOD_URL: ${{secrets.FOD_EMEA_URL}}
-          FOD_TENANT: ${{secrets.FOD_EMEA_TENANT}}
-          FOD_CLIENT_ID: ${{secrets.FOD_EMEA_CLIENT_ID}}
-          FOD_CLIENT_SECRET: ${{secrets.FOD_EMEA_CLIENT_SECRET}}
+          FOD_URL: ${{secrets.FOD_URL}}
+          FOD_TENANT: ${{secrets.FOD_TENANT}}
+          FOD_CLIENT_ID: ${{secrets.FOD_CLIENT_ID}}
+          FOD_CLIENT_SECRET: ${{secrets.FOD_CLIENT_SECRET}}
           FOD_RELEASE: "Test Git Action:${{ github.ref_name }}"
           DO_SETUP: true
           SETUP_EXTRA_OPTS: --use-aviator
