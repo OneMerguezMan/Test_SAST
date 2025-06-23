@@ -1,0 +1,4 @@
+# requirements-vuln.txt
+# Ce fichier utilise une version vulnérable de Flask (exemple CVE-2018-1000656)
+Flask==0.12
+requests 
