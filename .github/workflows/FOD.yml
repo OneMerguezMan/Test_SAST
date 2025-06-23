@@ -1,6 +1,13 @@
+name: Fortify Security Scan
+
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "main" ]
   pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+  schedule:
+    - cron: '16 23 * * 4'
  
  
 jobs:
