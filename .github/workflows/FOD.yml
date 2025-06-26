@@ -2,10 +2,14 @@ name: Fortify Security Scan
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - Test_criteres
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+    branches:
+      - main
+      - Test_criteres
   schedule:
     - cron: '16 23 * * 4'
  
