@@ -33,4 +33,4 @@ This is a deliberately vulnerable web application built with Flask, designed to 
 - `/redirect?next=...` - Open Redirect
 
 ## Warning
-This app is intentionally insecure. Use only in isolated, controlled environments for security testing. 
+This app is intentionally insecure. Use only in isolated, controlled environments for security testing..
