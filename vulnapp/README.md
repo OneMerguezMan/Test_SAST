@@ -1,4 +1,4 @@
-# Vulnerable Flask App for DAST Testing    
+# Vulnerable Flask App for DAST Testing
 
 This is a deliberately vulnerable web application built with Flask, designed to test DAST (Dynamic Application Security Testing) tools. **Do not deploy in production!**
 
