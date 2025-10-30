@@ -1,0 +1,15 @@
+- hosts: all
+  become: yes
+  vars:
+    ansible_user: root
+    ansible_password: insecurePlaintextPassword
+  tasks:
+    - name: Enable password auth for SSH (insecure)
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PasswordAuthentication'
+        line: 'PasswordAuthentication yes'
+    - name: Start telnet (insecure)
+      shell: apt-get update && apt-get install -y telnetd && service openbsd-inetd restart
+
+
