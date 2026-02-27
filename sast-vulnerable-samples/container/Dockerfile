@@ -1,5 +1,5 @@
 # Insecure Dockerfile for scanner testing
-FROM node:latest
+FROM node:25.7.0-bookworm
 
 # Run as root (default) and install via curl | sh
 RUN apt-get update && apt-get install -y curl \
